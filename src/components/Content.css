@@ -1,0 +1,79 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    position: relative;
+    white-space: nowrap;
+    fill: #d9d9d9;
+    overflow: hidden;
+    min-height: 95px;
+    width: 100%;
+    align-items: center;
+    padding: 34px 20px;
+    font: 400 30px/36px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .image-wrapper {
+      white-space: initial;
+      max-width: 100%;
+    }
+  }
+  
+  .img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .description {
+    background-color: #d9d9d9;
+    display: flex;
+    margin-top: 26px;
+    width: 100%;
+    flex-direction: column;
+    align-items: end;
+    padding: 49px 66px 49px 80px;
+  }
+  
+  @media (max-width: 991px) {
+    .description {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
+  .description-text {
+    color: #000;
+    white-space: nowrap;
+    font: 200 28px/34px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .description-text {
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+  
+  .github-link {
+    color: #000;
+    margin-bottom: 313px;
+    white-space: nowrap;
+    font: 200 28px/34px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .github-link {
+      margin-bottom: 40px;
+      white-space: initial;
+    }
+  }
