@@ -28,5 +28,4 @@ const Content: React.FC<ContentProps> = ({
       );
     };
     
-
 export default Content;

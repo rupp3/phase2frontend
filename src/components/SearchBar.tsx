@@ -1,6 +1,17 @@
 import React from "react";
 import './SearchBar.css';
-import Button from "./Button";
+
+const SearchBar: React.FC = () => {
+  return (
+    <div className="search-bar">
+      <input type="text" className="search-input" aria-label="Search Packages" />
+      <button className="btn btn-secondary">Search</button>
+    </div>
+  );
+};
+
+
+/*
 
 function SearchBar() {
   return (
@@ -12,4 +23,6 @@ function SearchBar() {
     </div>
   );
   };
+
+  */
 export default SearchBar;

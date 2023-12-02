@@ -1,0 +1,36 @@
+.divider {
+    background-color: #000;
+    align-self: center;
+    margin-top: 9px;
+    width: 1306px;
+    height: 1px;
+  }
+  
+  @media (max-width: 991px) {
+    .divider {
+      max-width: 100%;
+    }
+  }
+
+  .package-name {
+    color: #000;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #d9d9d9;
+    align-self: center;
+    margin-top: 42px;
+    width: 100%;
+    max-width: 1288px;
+    padding: 46px 20px;
+    font: 400 30px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .package-name {
+      white-space: initial;
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }

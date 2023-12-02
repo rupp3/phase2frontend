@@ -1,7 +1,7 @@
-import SearchBar from "./components/SearchBar";
-import Button from "./components/Button";
+import Header from "./components/Header";
+import ButtonGroup from "./components/ButtonGroup";
 import Content from "./components/Content";
-import FigmaPage from "./components/FigmaPage";
+import SubHeader from "./components/SubHeader";
 
 function App(){
   /*
@@ -19,7 +19,10 @@ function App(){
     <Button onClick={()=> console.log('clicked rate')}>Rate</Button>
   } */
   return <div>
-    <FigmaPage></FigmaPage>
+      <Header />
+      <ButtonGroup />
+      <div className="divider" />
+      <SubHeader />
 
     </div>
 }
