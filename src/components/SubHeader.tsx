@@ -1,8 +1,14 @@
 import React from "react";
 import "./SubHeader.css";
 
-const SubHeader: React.FC = () => {
-  return <div className="package-name">Package Name</div>;
+interface SubHeaderProps {
+  packageName: string;
+}
+
+const SubHeader: React.FC<SubHeaderProps> = ({
+  packageName
+}) => {
+  return <div className="package-name">{packageName}</div>;
 };
 
 export default SubHeader;

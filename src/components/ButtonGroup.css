@@ -1,32 +1,49 @@
 .button-group {
-    align-self: center;
-    display: flex;
-    margin-top: 74px;
-    width: 100%;
-    max-width: 1209px;
-    align-items: start;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0 20px;
+  align-self: center;
+  display: flex;
+  margin-top: 10px; /* Adjusted margin-top */
+  width: 100%;
+  max-width: 1209px;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  margin: 0 auto; /* Center horizontally */
+}
+
+@media (max-width: 991px) {
+  .button-group {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; /* Adjusted margin-top for smaller screens */
   }
-  
-  @media (max-width: 991px) {
-    .button-group {
-      max-width: 100%;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 40px;
-    }
-  }
-  
+}
+
+.button {
+  color: #000;
+  white-space: nowrap;
+  font: 400 30px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
   .button {
-    color: #000;
-    white-space: nowrap;
-    font: 400 30px Inter, sans-serif;
+    white-space: initial;
   }
-  
-  @media (max-width: 991px) {
-    .button {
-      white-space: initial;
-    }
+}
+
+.divider {
+  background-color: #000;
+  align-self: center;
+  margin-top: 9px;
+  width: 1306px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 991px) {
+  .divider {
+    max-width: 100%;
   }
+}
