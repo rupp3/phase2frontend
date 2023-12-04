@@ -16,8 +16,7 @@ const Content: React.FC<ContentProps> = ({
           </div>
           <div className="description">{packageDescription}</div>
           <a href="https://www.github.com" className="custom-link">{githubLink}</a>
-
-          <div className="github-link">{githubLink}</div>
+          
         </div>
       );
     };    
